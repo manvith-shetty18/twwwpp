@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="w-full top-0 left-0 h-40 bg-[#091242]" >
+        <div class="flex items-center justify-center w-full h-full">
+            <img class="cursor-pointer" src="scr.png" alt="Logo" />
+        </div>
+    </div> 
+
+    <section class="w-full ">
+        <nav class="flex h-12 sm:h-16 absolute sm:relative bg-[url('Backgroound.jpg')] backdrop-brightness-50 drop-shadow-xl backdrop-blur-sm text-white font-semibold items-center gap-4 sm:gap-14"
+        style="background-size: 100%;">
+            <div class="flex justify-evenly absolute sm:relative w-full sm:w-96 left-0 sm:left-64 gap-9">
+                <a class="w-8 hover:border-r-white absolute sm:relative gap-3" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+            </div>
+
+            <div class="flex flex-row-reverse h-12 sm:h-16 absolute sm:relative left-1/3 items-center gap-4 sm:gap-14"> 
+                <img src="Instagram.png" alt="" srcset="">
+                <img src="Facebook.png" alt="" srcset="">
+                <img src="Vector.png" alt="" srcset="">
+                <img src="Linkdin.png" alt="" srcset="">
+            </div>
+            <button class="absolute sm:relative left-1/3 w-48 text-black bg-white h-12 sm:h-16">Request Quote</button>
+        </nav>
+    </section>
+
+<section class="w-[100vw] h-[40vw] bg-[url('Backgroound.jpg')] bg-cover bg-center">
+    <div class="container mx-auto px-2 sm:px-6 pt-10 text-white">
+
+        <h1 class="w-[20vw] text-sm text-left backdrop-blur-sm bg-black/20 p-2 text-white font-normal border-l-[2px] border-[#FFB629] mb-4">
+            Logistics & Supply Chain Solutions
+        </h1>
+
+        <h1 class="text-3xl sm:text-5xl font-bold mb-4">Your Gateway to <br>Any Destination <br>in the World</h1>
+        <p class="text-lg mb-12">In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu <br> no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim <br>diam interdum nulla, sed laoreet risus lectus. </p>
+        <a href="#" class="bg-yellow-600 text-white px-2 sm:px-6 py-2 ">Explore More</a>
+    </div>
+</section>
+
+  <section class="bg-white py-28">
+    <div class="container mx-auto">
+
+        <div class="flex flex-col lg:flex-row gap-16 items-start">
+ 
+            <div class="w-full lg:w-1/3">
+                <span class="bg-yellow-500 text-black px-2 py-1 rounded text-sm font-medium">What We Do</span>
+                <h2 class="text-4xl font-bold text-gray-900 mt-4">Safe & Reliable Cargo Solutions</h2>
+            </div>
+
+            <div class="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
+ 
+                <div class="flex gap-4 items-start">
+                    <img src="Icon.png" alt="Sea Transport Icon" class="w-12 h-12">
+                    <div class="flex gap-4">
+                        <img src="Line.png" alt="Line Separator" class="w-1 h-12">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Sea Transport Services</h3>
+                            <p class="text-gray-600 text-sm">Following the quality of our service thus having gained trust of our many clients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <img src="Icon (1).png" alt="Warehousing Icon" class="w-12 h-12">
+                    <div class="flex gap-4">
+                        <img src="Line.png" alt="Line Separator" class="w-1 h-12">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Warehousing Services</h3>
+                            <p class="text-gray-600 text-sm">Following the quality of our service thus having gained trust of our many clients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <img src="Icon (2).png" alt="Air Freight Icon" class="w-12 h-12">
+                    <div class="flex gap-4">
+                        <img src="Line.png" alt="Line Separator" class="w-1 h-12">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Air Freight Services</h3>
+                            <p class="text-gray-600 text-sm">Following the quality of our service thus having gained trust of our many clients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-start">
+                    <img src="Icon (3).png" alt="Local Shipping Icon" class="w-12 h-12">
+                    <div class="flex gap-4">
+                        <img src="Line.png" alt="Line Separator" class="w-1 h-12">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Local Shipping Services</h3>
+                            <p class="text-gray-600 text-sm">Following the quality of our service thus having gained trust of our many clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="absolute sm:relative bg-gray-900 text-white">
+ 
+    <div class="absolute inset-0">
+        <img
+            src="container.jpg"
+            alt="Shipping Containers"
+            class="w-full h-full object-cover"
+        />
+    </div>
+
+    <div class="absolute sm:relative z-10 bg-white text-black py-12 px-8 md:px-16 lg:px-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center shadow-lg ">
+
+        <div>
+            <h2 class="text-2xl lg:text-3xl font-bold mb-4">
+                We provide full range global logistics solution
+            </h2>
+            <p class="mb-6 text-gray-700">
+                Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking
+                to further the overall value proposition. Organically grow the holistic world view of disruptive
+                innovation via workplace diversity and empowerment.
+            </p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <span class="bg-yellow-500 text-white p-3 rounded-full mr-4">
+                        📦
+                    </span>
+                    <p>Delivery on Time</p>
+                </div>
+                <div class="flex items-center">
+                    <span class="bg-yellow-500 text-white p-3 rounded-full mr-4">
+                        💰
+                    </span>
+                    <p>Optimized Travel Cost</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-0 gap-10">
+            <img
+                src="Image.png"
+                alt="Airplane"
+                class="w-full h-100 object-cover "
+            />
+        </div>
+    </div>
+
+    <div class="absolute sm:relative z-10 text-center py-12 bg-white-800 text-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div>
+                <h3 class="text-3xl font-bold">1294</h3>
+                <p class="text-lg">Delivered Packages</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold">3594</h3>
+                <p class="text-lg">Satisfied Clients</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="py-16 px-2 sm:px-6">
+    <div class="container mx-auto">
+
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">
+                Transporting Across The World
+            </h2>
+        </div>
+
+<div class="grid grid-cols-1 sm:grid-cols-10 lg:grid-cols-5 gap-3">
+
+    <div class="overflow-hidden">
+        <img src="1 (1).png" alt="Liquid Transportation" class="max-w-4xl h-96 object-cover">
+    </div>
+
+    <div class=" overflow-hidden">
+        <img src="2.png" alt="Packaging Solutions" class="max-w-4xl h-96 object-cover">
+    </div>
+
+    <div class="overflow-hidden">
+        <img src="3.png" alt="Contract Logistics" class="max-w-4xl h-96 object-cover">
+    </div>
+
+    <div class="overflow-hidden">
+        <img src="4.png" alt="Warehousing & Distribution" class="max-w-4xl h-96 object-cover">
+    </div>
+
+    <div class="overflow-hidden">
+        <img src="5.png" alt="Specialized Transport" class="max-w-4xl h-96 object-cover">
+    </div>
+</div>
+    
+    <div class="text-center mt-0 bg-yellow-400 py-12">
+        <button class="text-white px-2 sm:px-6 py-2 bg-[#091242]">More Work</button>
+    </div>
+
+    <div class="mt-16 flex justify-between items-center">
+      <!-- Left section for text -->
+      <div class="text-left mb-12 ml-32">
+          <p class="w-[5vw] text-sm text-center backdrop-blur-sm bg-black/10 py-1/2 text-black font-normal border-l-[4px] border-[#FFB629]">Testimonials</p>
+          <h2 class="text-2xl font-bold mb-2 text-gray-800">What Our Customers Say</h2>
+      </div>
+  
+      <!-- Right section for buttons -->
+      <div class="flex space-x-6 mr-48">
+          <button class="">
+            <img src="_ (2).png" alt="Customer 1" class="w-12 h-12">
+          </button>
+
+            <button class="">
+              <img src="_ (3).png" alt="Customer 1" class="w-12 h-12">
+            </button>
+          </button>
+      </div>
+  </div>
+  
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2  px-2 sm:px-6 md:px-12 lg:px-16">
+
+            <div class="bg-gray-200 p-8 flex flex-col justify-between">
+                <div class="flex items-center mb-6">
+                    <img src="User.png" alt="Customer 1" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="font-bold text-gray-800">Kathleen Smith</h3>
+                        <p class="text-gray-500 text-sm">Fuel Company</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-6">
+                    Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to
+                    further the overall value proposition. Organically grow the holistic world view of disruptive innovation
+                    via workplace diversity and empowerment.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="text-yellow-500 text-2xl">“</div>
+                    <div class="flex text-yellow-500">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+            </div>
+   
+            <div class="bg-[#091242] text-white p-8 flex flex-col justify-between">
+                <div class="flex items-center mb-6">
+                    <img src="User (1).png" alt="Customer 2" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="font-bold">John Martin</h3>
+                        <p class="text-blue-300 text-sm">Restoration Company</p>
+                    </div>
+                </div>
+                <p class="mb-6">
+                    Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to
+                    further the overall value proposition. Organically grow the holistic world view of disruptive innovation
+                    via workplace diversity and empowerment.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="text-yellow-500 text-2xl">“</div>
+                    <div class="flex text-yellow-500">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mx-auto flex flex-wrap mt-16">
+
+        <div class="w-full lg:w-1/2 absolute sm:relative bg-[#091242]">
+            <img src="airplane.png" alt="Dreamlifter airplane" class="w-full sm:w-96 h-auto lg:w-3/4 absolute bottom-5 left-5">
+            <div class="absolute bottom-5 left-5 bg-yellow-400 text-black px-4 py-3">
+                <h3 class="font-bold text-lg">Moving your products across borders</h3>
+            </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 bg-white p-10"style="background-image: url('Pattern.png');">
+
+            <div class="mb-8">
+                
+                <span class=" w-[15vw] text-sm text-center backdrop-blur-sm bg-black/10 py-1/2 border-l-[2px] border-[#FFB629] font-semibold text-gray-500 uppercase ">Why Choose</span>
+                <h2 class="text-3xl font-extrabold text-gray-800 mt-2 mb-4">We create opportunity to<br> reach potential</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Leverage agile frameworks to provide a robust synopsis for<br> strategy foster collaborative thinking to further the overall value <br>proposition.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center rounded-full">
+                        <img src="Icon (4).png" alt="Safe Package Icon" class="w-12 h-12">
+                    </div>
+                    <span class="text-lg font-medium text-gray-800">Safe Package</span>
+                </div>
+              
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center rounded-full">
+                        <img src="Icon (7).png" alt="Ship Everywhere Icon" class="w-12 h-12">
+                    </div>
+                    <span class="text-lg font-medium text-gray-800">Ship Everywhere</span>
+                </div>
+               
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center rounded-full">
+                        <img src="Icon (5).png" alt="Global Tracking Icon" class="w-12 h-12">
+                    </div>
+                    <span class="text-lg font-medium text-gray-800">Global Tracking</span>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center rounded-full">
+                        <img src="Icon (9).png" alt="24/7 Support Icon" class="w-12 h-12">
+                    </div>
+                    <span class="text-lg font-medium text-gray-800">24/7 Support</span>
+                </div>
+               
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center rounded-full">
+                        <img src="Icon (6).png" alt="In Time Delivery Icon" class="w-12 h-12">
+                    </div>
+                    <span class="text-lg font-medium text-gray-800">In Time Delivery</span>
+                </div>
+               
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center rounded-full">
+                        <img src="Icon (8).png" alt="Transparent Pricing Icon" class="w-12 h-12">
+                    </div>
+                    <span class="text-lg font-medium text-gray-800">Transparent Pricing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-gray-100">
+        <section class="text-center py-3">
+
+            <div class="flex flex-col items-center justify-center h-32 space-y-2">
+             
+              <h1 class="w-[7vw] text-sm text-center backdrop-blur-sm bg-black/10 py-1/2 text-black font-normal border-l-[4px] border-[#FFB629]">
+                The Transporters
+              </h1>
+              
+              <h2 class="text-3xl font-bold">
+                Meet Expert Team
+              </h2>
+            </div>
+          </section>          
+
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            
+            <div class="bg-white">
+              <img src="1 (3).png" alt="Team Member" class="w-full h-full object-cover">
+            </div>
+           
+            <div class="bg-white">
+              <img src="2 (2).png" alt="Team Member" class="w-full h-full object-cover">
+            </div>
+
+            <div class="bg-white">
+              <img src="3 (2).png" alt="Team Member" class="w-full h-full object-cover">
+        </section>
+      
+        <section class="bg-[#091242] text-white py-12">
+            <div class="max-w-6xl mx-auto px-4">
+             
+              <div class="text-left mb-2">
+                <p class="text-white text-sm w-[5vw] text-sm text-center backdrop-blur-sm bg-white/10 py-1/2 text-black font-normal border-l-[4px] border-[#FFB629]">
+                  Contact
+                </p>
+                <h2 class="text-3xl font-bold mt-2">
+                  Get in touch with us
+                </h2>
+              </div>
+          
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 items-start">
+              
+                <div>
+                  <p class="mb-6 leading-relaxed">
+                    Leverage agile frameworks to provide a robust<br> synopsis for strategy. Foster collaborative<br> thinking to further the overall value.
+                  </p>
+                  <div class="space-y-6">
+                    <div class="flex items-center">
+                      <img src="Icon (10).png" alt="Email" class="w-12 h-12 mr-4">
+                      <span class="text-lg">Email<br>
+                        contact@logistics.com</span>
+                    </div>
+                    
+                    <div class="flex items-center">
+                      <img src="Icon (11).png" alt="Phone" class="w-12 h-12 mr-4">
+                      <span class="text-lg">Call Us <br>
+                        (00) 112 365 489</span>
+                    </div>
+
+                    <div class="flex items-center">
+                      <img src="Icon (12).png" alt="Location" class="w-12 h-12 mr-4">
+                      <span class="text-lg">Mon - Sat 9.00 - 18.00<br>
+                        Sunday Closed
+                        </span>
+                    </div>
+                  </div>
+                </div>
+          
+                <form class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+                  <input type="text" placeholder="Your Name" class="col-span-2 md:col-span-1 p-3  bg-[#091242] text-black  border-[2px] border-[#87CEEB]">
+                  <input type="email" placeholder="Email" class="col-span-2 md:col-span-1 p-3  bg-[#091242] text-black  border-[2px] border-[#87CEEB]">
+                  <input type="text" placeholder="Phone Number" class="col-span-2 md:col-span-1 p-3  bg-[#091242] text-black  border-[2px] border-[#87CEEB]">
+                  <input type="text" placeholder="City" class="col-span-2 md:col-span-1 p-3 bg-[#091242] text-black  border-[2px] border-[#87CEEB]">
+                  <textarea placeholder="Your Message" class="col-span-2 p-3  bg-[#091242] text-black  border-[2px] border-[#87CEEB]"></textarea>
+                  <button class="col-span-1 bg-yellow-600 text-black p-3  font-bold">
+                    Submit Message
+                  </button>
+                </form>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-12">
+                <img src="1 (2).png" alt="Gallery Image" class="w-full h-full object-cover">
+                <img src="2 (1).png" alt="Gallery Image" class="w-full h-full object-cover">
+                <img src="3 (1).png" alt="Gallery Image" class="w-full h-full object-cover">
+                <img src="4 (1).png" alt="Gallery Image" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </section>
+
+         <div class="bg-white py-10">
+  <div class="container mx-auto px-4">
+    <!-- Entire Content -->
+    <div class="bg-white p-8 w-full h-full flex flex-col justify-center items-center">
+
+        <h1 class="w-[5vw] text-sm text-center backdrop-blur-sm bg-black/5 py-1/2 text-black font-normal border-l-[4px] border-[#FFB629]">
+            Our Blog
+          </h1>
+
+      <!-- Header -->
+      <h2 class="text-3xl font-bold text-center mb-8 mt-2">Our Latest News</h2>
+
+      <!-- News Section -->
+      <div class="space-y-8">
+
+        <!-- Card 1 -->
+        <div class="flex flex-col lg:flex-row items-stretch bg-white">
+          <!-- Image -->
+          <div class="absolute sm:relative w-full lg:w-1/2 h-full mt-4">
+            <img src="Image (2).png" alt="News Image" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Content -->
+          <div class="flex flex-col lg:flex-row items-start p-4 lg:w-2/3 space-y-4">
+            <!-- Date Image -->
+            <div class="flex-shrink-0">
+              <img src="Date.png" alt="Date Image" class="w-30 h-30 object-cover rounded-lg">
+            </div>
+
+            <!-- Text Content -->
+            <div class="flex-grow ml-3">
+              <h3 class="text-xl font-semibold mb-2">
+                Inland freight a worthy <br>solution for your business
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                We are dedicated to creating added value<br> for our customers by implementing modern<br> technology in our work.
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 font-semibold space-y-1">
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staff</li>
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staff</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col lg:flex-row items-stretch bg-white">
+          <!-- Image -->
+          <div class="absolute sm:relative w-full lg:w-1/2 h-full mt-4">
+            <img src="Photo.png" alt="News Image" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center m-8">
+              <button class="text-white px-3 py-2 text-sm">Read More</button>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="flex flex-col lg:flex-row items-start p-4 lg:w-2/3 space-y-4">
+            <!-- Date Image -->
+            <div class="flex-shrink-0">
+              <img src="Date (1).png" alt="Date Image" class="w-30 h-30 object-cover rounded-lg">
+            </div>
+
+            <!-- Text Content -->
+            <div class="flex-grow ml-3">
+              <h3 class="text-yellow-300 text-xl font-semibold mb-2">
+                How technology can help<br> redraw the supply chain map
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                We are dedicated to creating added value<br> for our customers by implementing modern<br> technology in our work.
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 font-semibold space-y-1">
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staff</li>
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staff</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col lg:flex-row items-stretch bg-white">
+          <!-- Image -->
+          <div class="absolute sm:relative w-full lg:w-1/2 h-full mt-4">
+            <img src="Image (3).png" alt="News Image" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Content -->
+          <div class="flex flex-col lg:flex-row items-start p-4 lg:w-2/3 space-y-4">
+            <!-- Date Image -->
+            <div class="flex-shrink-0">
+              <img src="Date (2).png" alt="Date Image" class="w-30 h-30 object-cover rounded-lg">
+            </div>
+
+            <!-- Text Content -->
+            <div class="flex-grow ml-3">
+              <h3 class="text-xl font-semibold mb-2">
+                Five things you should have <br>ready for your broker
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">
+                We are dedicated to creating added value<br> for our customers by implementing modern<br> technology in our work.
+              </p>
+              <ul class="list-disc list-inside text-sm text-gray-600 font-semibold space-y-1">
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staff</li>
+                <li>Urgent transport solutions</li>
+                <li>Reliable & experienced staff</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Blog Button -->
+        <div class="mt-8 text-center">
+          <button class="bg-[#091242] text-white px-2 sm:px-6 py-2">More Blog</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="bg-[#091242] text-white">
+  <!-- Hero Section with Image -->
+  <div class="absolute sm:relative">
+    <img
+      src="Image (4).png"
+      alt="Shipping Yard"
+      class="w-full h-[400px] object-cover"
+    />
+  </div>
+
+  <nav class="bg-[#18235c] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-2 sm:px-6 lg:px-8 h-32">
+      <div class="flex justify-between items-center h-12 sm:h-16">
+        <!-- Logo Section -->
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <!-- Replace this div with your logo -->
+            <img src="Logo.png" alt="Logo" class="h-48 w-full sm:w-96 bg-[#091242] px-24 py-28 pb-12">
+          </div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="hidden md:flex space-x-8 font-semibold text-2xl mt-16 px-96 gap-12">
+          <a href="#" class="text-white hover:text-yellow-500">Pages</a>
+          <a href="#" class="text-white hover:text-yellow-500">Utility</a>
+          <a href="#" class="text-white hover:text-yellow-500">Subscribe</a>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Footer Grid Section -->
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 py-20 grid md:grid-cols-4 gap-8">
+   <!-- About Section -->
+<div>
+  <p class="text-lg leading-relaxed ">
+    Leverage agile frameworks to provide a robust synopsis for strategy collaborative thinking to further the overall value proposition.
+  </p>
+  <div class="mt-4 ml-2">
+    <!-- Email Section -->
+    <p class="flex items-center mb-2">
+      <img src="Icon (10).png" alt="Email Icon" class="h-12 sm:h-16 w-16 mr-2" />
+     Email<br> contact@logistics.com
+    </p>
+    <!-- Phone Section -->
+    <p class="flex items-center">
+      <img src="Icon (11).png" alt="Phone Icon" class="h-12 sm:h-16 w-16 mr-2" />
+      Contact<br>(00) 112 365 489
+    </p>
+  </div>
+</div>
+
+
+    <!-- Pages Section -->
+    <div>
+      <ul class="space-y-2 text-lg ml-28 mb-2">
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Our Team</a></li>
+        <li><a href="#" class="hover:underline">Our Project</a></li>
+        <li><a href="#" class="hover:underline">Pricing</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Utility Section -->
+    <div>
+      <ul class="space-y-2 text-lg ml-18 mb-2">
+        <li><a href="#" class="hover:underline">Style Guide</a></li>
+        <li><a href="#" class="hover:underline">Changelog</a></li>
+        <li><a href="#" class="hover:underline">Licenses</a></li>
+        <li><a href="#" class="hover:underline">Protected</a></li>
+        <li><a href="#" class="hover:underline">Not Found</a></li>
+      </ul>
+    </div>
+
+    <!-- Subscribe Section -->
+    <div>
+      <form>
+        <input
+          type="email"
+          placeholder="Email here*"
+          class="w-full px-2 sm:px-6 py-4 mb-4 border border-[#303d85] bg-[#091242] focus:ring-2 focus:ring-yellow-500 focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="bg-yellow-500 text-black px-4 py-2 w-30 hover:bg-yellow-600"
+        >
+          Send Now
+        </button>
+      </form>
+      <div class="flex items-center space-x-4 mt-4">
+        <a href="#" class="text-gray-400 hover:text-white">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Copyright Section -->
+  <div class="text-center text-sm py-4 border-t border-gray-700 max-w-7xl mx-auto flex justify-between">
+    <p>Copyright © The Web People.</p>
+    <ul class="flex items-center space-x-6">
+      <li><a href="#" class="hover:underline">Style Guide</a></li>
+      <li><a href="#" class="hover:underline">Licenses</a></li>
+      <li><a href="#" class="hover:underline">Changelog</a></li>
+      <li><a href="#" class="hover:underline">Password</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
